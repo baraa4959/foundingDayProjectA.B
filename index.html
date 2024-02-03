@@ -1,69 +1,227 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قصة تأسيس المملكة</title>
-    <link rel="stylesheet" href="style.css">
+@font-face {
+    font-family: Harir;
+    src: url("fonts/Harir_complete_OTF_Harir.otf") format("opentype");
+}
 
-</head>
-<body>
-    <!--الترويسة-->
-    <header>
-        <img src="src/logo.png" alt="شعار يوم التأسيس" class="logo">
-        <div class="Tagline_div">
-            <img src="src/Tagline.png" alt="شعار يوم بدينا" class="Tagline">
-        </div>
-    </header>
-    <!--محتوى الصفحة-->
-    <div>
-        <div class="video-player_size">
-        <div class="video-player">
-            <video id="video">
-                <source src="src/video.mp4" type="video/mp4" />
-            </video>
-            <div class="controls">
-                <button class="sound-button control-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-                    </svg>
-                    </button>
-                    <button class="control-button fullscreen-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
-                        </svg>
-                    </button>
-                <input type="range" min="0" max="100" class="timeline" value="0" />
-                <button class="play-button control-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-        <p>لم تكن البداية قريبة،
-        بل تتجذر لزمنٍ ما قبل الإسلام، حيث قَدِم بنو حنيفة إلى اليمامة في مطلع القرن الخامس الميلادي، واستقروا في وسط الجزيرة العربية ليأسسوا اليمامة التي تمركزت في منطقة العارض في نجد؛ على ضفاف وادي حنيفة، لتصبح بعد ذلك جزءاً من الدولة النبوية عند ظهور الإسلام.
-        وبعد انتهاء الخلافة الراشدة، تزعزع الاستقرار في الجزيرة العربية، وساد فيها الإهمال وعدم الاستقرار والضعف وهُجرت المنطقة وأصبحت في طي النسيان.</p>
-        <img src="src/img1.webp" alt="صورة توضيحية" class="photo1" style="width: 25%; height: auto; padding: 0px; margin: 0px;">
-        <p>حتى عاد الأمير مانع بن ربيعة المريدي الحنفي، ليكمل مسيرة عشيرته "بني حنيفة"، وذلك في منتصف القرن التاسع الهجري، وتحديداً في عام ٨٥٠م/١٤٤٦م، حيث تمكّن الأمير من العودة إلى وسط الجزيرة العربية حيث كان أسلافه، وكان قدومه اللبنة الأولى في مراحل تأسيس الدولة السعودية الأولى التي ستبرز لاحقاً، عندما أسس مدينة الدرعية الثانية -والتي تكونت من غصيبة والمليبيد-، لتكون المدينة القابلة للتوسع وتحقيق الأمن والاستقرار، وهي مختلفة عن الدرعية التي كانوا يستقرون على أرضها بالقرب من القطيف شرق الجزيرة العربية.</p>
-        <img src="src/img2.jpg" alt="صورة توضيحية" class="photo2" style="width: 25%; height: auto; padding: 0px; margin: 0px;">
-        <p>وبعد أكثر من ٢٨٠ عاماً تعاقب فيها أبناء مانع المريدي وأحفاده على إمارة الدرعية، تهيأت المنطقة لمرحلة جديدة وذلك عندما تولى الإمام محمد بن سعود الحكم في منتصف عام ١١٣٩ه (فبراير ١٧٢٧م) حيث نقل الدرعية من الضعف والانقسام، إلى توحيدها واستقلالها السياسي، ليؤسس الدولة السعودية الأولى، وعاصمتها الدرعية.</p>
-        <img src="src/img3.jpg" alt="صورة توضيحية" class="photo3" style="width: 40%; height: auto; padding: 0px; margin: 0px;">
-        <p>ولد الإمام محمد بن سعود بن محمد بن مقرن في الدرعية عام ١٠٩٠ه (١٦٧٩م) ونشأ وترعرع فيها، واكتسب خبرة من التجارب التي خاضها حينما عمل إلى جانب والده وجده أثناء توليهم الأمارة، مما أكسبه خبرة في الحكم، ومعرفة بأوضاع الدرعية، وبفضل عزمه ورؤيته، ومعرفته بأحوال المنطقة، فقد تمكن من تحقيق طموحه، وتجسيد عزمه ليتشكل في دولةٍ مستقرة، ومزدهرة.</p>
-        <img src="src/img4.jpg" alt="صورة توضيحية" class="photo4" style="width: 30%; height: auto; padding: 0px; margin: 0px;">
-        <p>عندما تولى الإمام محمد بن سعود الحكم، عمل على تأسيس الوحدة فيها وتأمين الاستقرار والأمن داخلها وفي محيطها من البلدات والقبائل وحماية طرق الحج والتجارة. ونظّم الأوضاع الاقتصادية للدولة، وتوسّع في بناء وتنظيم أسوار الدرعية. وانطلقت بعدها الدولة بتوحيد المناطق في وسط الجزيرة العربية؛ لتشكل بداية المرحلة الأولى من توحيد الدولة السعودية الأولى الذي اكتمل في عهد أبنائه وأحفاده.</p>
-    </div>
-    <!--التذليل-->
-    <footer>
-        <div class="name_div">
-            <h6 class="name">إعداد الطالب: عبدالله باعامر</h6>
-            <h6 class="class">الصف: أولى / ١١ (موهبة)</h6>
-        </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+@font-face {
+    font-family: Harir;
+    font-weight: bold;
+    src: url("fonts/Harir_complete_OTF_Harir_Bold.otf") format("opentype");
+}
+
+body {
+    background-color: #e6e6e6;
+    text-align: center;
+    font-family: Harir;
+    font-weight: normal;
+}
+
+.logo {
+    height: 70px;
+    padding: 25px;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+.Tagline_div {
+    width: 100%;
+    margin-bottom: 1%;
+    background-color: #6B4E45;
+}
+
+.Tagline {
+    height: 90px;
+    width: auto;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
 
 
+.video-player {
+    display: block;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    background:#e4e4e4;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, #000);
+    align-items: center;
+    transition: opacity .2s;
+    border-radius: 10px;
+}
+
+.video-player.playing .controls {
+    opacity: 0;
+}
+
+.video-player:hover .controls {
+    opacity: 1;
+}
+
+.control-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    opacity: .8;
+    transition: all .2s;
+}
+
+.control-button:hover {
+    opacity: 1;
+}
+
+.control-button.play-button {
+    height: 40px;
+    width: 40px;
+}
+
+.control-button.sound-button {
+    height: 40px;
+    width: 40px;
+}
+
+.control-button.fullscreen-button {
+    height: 35px;
+    width: 35px;
+}
+
+.control-button svg {
+    stroke: #fff;
+    fill: transparent;
+}
+
+.timeline {
+    -webkit-appearance: none;
+    width: calc(100% - 125px);
+    height: .5em;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 5px;
+    background-size: 0% 100%;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+}
+
+.timeline::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .1s;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.timeline::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .1s;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.timeline::-ms-thumb {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .1s;
+    background-color: rgba(255, 255, 255, .8);
+    }
+
+.timeline::-webkit-slider-thumb:hover {
+    background-color: #fff;
+}
+
+.timeline:hover::-webkit-slider-thumb {
+    opacity: 1;
+}
+
+.timeline::-moz-range-thumb:hover {
+    background-color: #fff;
+}
+
+.timeline:hover::-moz-range-thumb {
+    opacity: 1;
+}
+
+.timeline::-ms-thumb:hover {
+    background-color: #fff;
+}
+
+.timeline:hover::-ms-thumb {
+    opacity: 1;
+}
+
+.timeline::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.timeline::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.timeline::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+p {
+    font-size: x-large;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: large;
+    color: #f0e6d6;
+}
+
+h6.name {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h6.class {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.name_div {
+    padding: 25px;
+}
+
+footer {
+    background-color: #6B4E45;
+}
 
