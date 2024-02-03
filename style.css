@@ -41,8 +41,8 @@ body {
 
 .video-player {
     display: block;
-    margin-right: 30%;
-    margin-left: 30%;
+    margin-right: 10%;
+    margin-left: 10%;
     width: auto;
     height: auto;
     position: relative;
